@@ -1,0 +1,44 @@
+
+nav{
+    background-color: rgba(0, 0, 0, 0.89) ; 
+    padding: 1px ;
+    border-radius: 15px;  
+    
+}
+
+ nav ul lu {
+    margin: 15px; 
+ }  
+ nav ul lu a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+ }
+ 
+ nav ul lu a:hover {
+    color: #ffd700;
+    text-decoration: underline ;
+ }
+
+div {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative ;
+}
+.input-container {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+input {
+    padding: 3px;
+    border: 1px solid #0a0a0a;
+    border-radius: 4px;
+}
+button{
+    background-color:blue;
+    color:rgb(255, 255, 255);
+    border-radius: 5px; 
+    border: black
+}
