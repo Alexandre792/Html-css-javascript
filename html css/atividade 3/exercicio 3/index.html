@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let nota1 = parseFloat(prompt("informe um numero: "));
+    let nota2 = parseFloat(prompt("informe um numero: "));
+    let operador = prompt("insira o operador (adição, subtração, multiplicação, divisão:)").toLowerCase();
+
+    let resultado;
+
+    switch (operador){
+        case '+' :
+            resultado = nota1 + nota2;
+            break;
+        case '-':
+            resultado = nota1 - nota2;
+            break;
+        case '*': 
+            resultado = nota1 * nota2;
+            break;
+        case '/' : 
+
+            if ( nota2 !==0){
+            resultado = nota1 / nota2;  
+            }else{
+                alert("erro: divisão por zero não é permitida.");
+                resultado = "indefinido";
+            }
+            break
+        default: 
+        alert("operador invalido. por gentileza, escolha entre adição, subtração, multiplicação ou divisão. ");
+        resultado = "indefinido";
+            break;
+    }
+
+    if ( resultado !=="indefinido"){
+        alert("O resultado da é:" +resultado);
+    }
+    
+   </script> 
+</body>
+</html>
