@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+</head>
+<body>
+    <label for="resultado">Calculadora simples</label><br>
+    <input type="text" id="resultado" placeholder="resultado" readonly><br> 
+    <input type="number" id="numero1" placeholder="informe um numero"><br>
+    <input type="number" id="numero2" placeholder="informe outro numero"><br>
+    <button onclick="somar()">+</button>
+    <button onclick="subtrair()">-</button>
+    <button onclick="multiplicar()">*</button>
+    <button onclick="dividir()">/</button>
+    <button onclick="cancelar()">C</button>
+    <script>
+        function obterValor(id){
+            return parseFloat(document.getElementById(id).value);
+        }
+
+        function atualizarResultado(valor) {
+            document.getElementById("resultado").value = valor;
+        }
+
+        function somar() {
+            const numero1 = obterValor("numero1");
+            const numero2 = obterValor("numero2");
+            atualizarResultado(numero1 + numero2);
+        }
+        function subtrair() {
+            const numero1 = obterValor("numero1");
+            const numero2 = obterValor("numero2");
+            atualizarResultado(numero1 - numero2);
+        }
+        function multiplicar() {
+            const numero1 = obterValor("numero1");
+            const numero2 = obterValor("numero2");
+            atualizarResultado(numero1 * numero2);
+        }
+
+        function dividir() {
+            const numero1 = obterValor("numero1");
+            const numero2 = obterValor("numero2");
+            if (numero2 === 0) {
+                atualizarResultado("Erro: Divisão por zero");
+            } else {
+                atualizarResultado(numero1 / numero2);
+            }
+        }
+        function cancelar() {
+            document.getElementById('numero1').value = '';
+            document.getElementById('numero2').value = '';
+            atualizarResultado('');
+        }
+
+
+    </script>
+
+</body>
+</html>
