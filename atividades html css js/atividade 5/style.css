@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(148, 148, 148);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+    
+
+
+.calculadora{
+    background-color: black;
+    padding: 30px ;
+    border-radius: 13px;
+    text-align: center;
+    font-size: 15px;
+    height: 50vh;
+    width: 300px;
+    
+    
+
+}
+
+.botao{
+    
+    padding: 20px;
+    min-width: 50px;
+    min-height: 40px;
+    margin: 1px;
+    color: white;
+
+}
+button{
+    border: none;
+    border-radius: 7px;
+    font-size: 18px;
+    cursor: pointer;
+    min-width: 50px;
+    min-height: 40px;
+    margin: 1px;
+    background-color: rgba(71, 66, 66, 0.183);
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.igual{
+    min-width: 105px;
+}
+
+
+
+label{
+    background-color:  rgba(71, 66, 66, 0.183);
+    color: white;
+}
+
+.display{
+    width: 205px;
+    height: 40px;
+    background-color: rgba(71, 66, 66, 0.183);
+    color: white;
+}
